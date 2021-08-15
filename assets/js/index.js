@@ -6,77 +6,158 @@ while (условие) {
   }
   */
 
-let n = 5, i = 1;
+// let n = 5, i = 1;
 
-while(i <= n){
-    console.log('*');
-    i++;
-}
+// while(i <= n){
+//     console.log('*');
+//     i++;
+// }
 
-//вывести число от 1 до 10
-n = 10;
-i = 1;
+// //вывести число от 1 до 10
+// n = 10;
+// i = 1;
 
-while(i <= n){
-    console.log(i);
-    i++;
-}
+// while(i <= n){
+//     console.log(i);
+//     i++;
+// }
 
-//вывести нечетные числа от 1 до 10
+// //вывести нечетные числа от 1 до 10
 
-n = 10;
-i = 1;
+// n = 10;
+// i = 1;
 
-while(i <= n){
-    console.log(i);
-    i += 2;
-}
+// while(i <= n){
+//     console.log(i);
+//     i += 2;
+// }
 
-//вывести сумму чисел от 1 до 10
-let res = 0;
-n = 10;
-i = 1;
+// //вывести сумму чисел от 1 до 10
+// let res = 0;
+// n = 10;
+// i = 1;
 
-while(i <= n){
-    res += i;
-    i++;
-}
-console.log(res);
+// while(i <= n){
+//     res += i;
+//     i++;
+// }
+// console.log(res);
 
-//вывести произведение чисел от 1 до 10
+// //вывести произведение чисел от 1 до 10
 
-i = 1;
-res = 1;
+// i = 1;
+// res = 1;
 
-while(i <= n){
-    res *= i;
-    i++;
-}
-console.log(res);
+// while(i <= n){
+//     res *= i;
+//     i++;
+// }
+// console.log(res);
 
-//вывести произведение нечетных чисел от 1 до 10
+// //вывести произведение нечетных чисел от 1 до 10
 
-i = 1;
-res = 1;
+// i = 1;
+// res = 1;
 
-while(i <= n){
-    res *= i;
-    i+=2;
-}
-console.log(res);
+// while(i <= n){
+//     res *= i;
+//     i+=2;
+// }
+// console.log(res);
 
-console.log('--------------------------');
+// console.log('--------------------------');
+// /*
+// do {
+//   // тело цикла
+// } while (condition);
+// */
+
+// i = 1, res = 0;
+// do{
+//     res += i;
+//     i++;
+// } while(i <= n);
+// console.log(res);
+
+//2
 /*
-do {
-  // тело цикла
-} while (condition);
+let result = 1, i = 1, n = 5;
+while(i <= n){
+    result *= 2;
+    console.log(result);
+    i++; 
+}
 */
 
-i = 1, res = 0;
-do{
+//3
+/*
+let x = -2, limitX = 2, step = 0.5;
+let y
+
+while(x <= limitX){
+    y = -3*x*x + 5*x -2;
+    console.log(y);
+    x += step;
+}
+*/
+
+//5*
+/*
+let res = 1 + 1;
+let userNum = Number(prompt('Введите результат от выражения 1 + 1 = '));
+
+while(userNum != res){
+    alert('Вы ввели неправильный результат. Повторите еще раз!')
+    userNum = Number(prompt('Введите результат от выражения 1 + 1 = '));
+}
+alert(`Правильно! 1 + 1 = ${userNum}`);
+*/
+
+//4*
+/*
+let res = 2 + 2;
+let userNum = Number(prompt('Введите результат от выражения 2 + 2 = '));
+let i = 0;
+
+while(i < 3){
+    if(userNum != res){
+        alert('Вы ввели неправильный результат. Повторите еще раз!')
+        userNum = Number(prompt('Введите результат от выражения 2 + 2 = '));
+        i++;
+    }
+    else {
+        alert(`Правильно! 2 + 2 = ${userNum}`);
+        i = 3;
+        //break;
+    }
+}
+*/
+
+// cicle for
+/*
+for (начало; условие; шаг) {
+    // ... тело цикла ...
+  }
+  */
+
+  //Вывести числа от 1 до 10
+
+  for(let i=1; i<=10; i++){
+    console.log(i);
+  }
+
+  for(let i=1; i<=10; i+=2){
+    console.log(i);
+  }
+
+  for(let i=0; i<=10; i+=2){
+    console.log(i);
+  }
+
+  console.log('--------------------------------')
+  //сумма чисел от 1 до 100
+  let res = 0, i;
+  for(i = 1; i <= 100; i++){
     res += i;
-    i++;
-} while(i <= n);
-console.log(res);
-
-
+  }
+  console.log(res);
