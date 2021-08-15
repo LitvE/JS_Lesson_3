@@ -162,7 +162,7 @@ for (начало; условие; шаг) {
   }
   console.log(res);
   */
-
+/*
   // Вывести таблицу умножения на 2
   let i, res = 0;
   for(i = 1; i <= 9; i++){
@@ -201,4 +201,86 @@ for (начало; условие; шаг) {
   if(count == 0){
       console.log('Високосных годов нет!');
   }
+*/
 
+//===================================================
+//FUNCTIONS
+//===================================================
+
+function printStars (num){
+    while(num > 0){
+        console.log('*');
+        num--;
+    }
+}
+
+printStars(5);
+printStars(10);
+printStars(2);
+
+function sumNumbers (n){
+    let sum = 0, num;
+    for(num = 1; num <= n; num++){
+        sum += num;
+    }
+    return sum;
+}
+let res;
+res = sumNumbers(10);
+console.log(res);
+
+function sumNumbers2 (limit1, limit2){
+    let sum = 0, num;
+    for(num = limit1; num <= limit2; num++){
+        sum += num;
+    }
+    return sum;
+}
+
+res = sumNumbers2(10, 15);
+console.log(res);
+
+function multiplyNumbers (limit1, limit2){
+    let result = 1, num;
+    for(num = limit1; num <= limit2; num++){
+        result *=  num;
+    }
+    return result;
+}
+
+console.log(multiplyNumbers(1, 10));
+
+console.log('--------------------------------');
+
+let x, y = 2050, year = 0, count = 0;
+
+function leapYearShow (startYear, endYear){
+    let count = 0;
+    for(x = startYear; x <= endYear; x++){
+        
+        if(x % 4 == 0) {
+            console.log(x);
+            count++;
+        };
+      }
+
+      if(count == 0){
+          console.log('Високосных годов нет!');
+      }
+}
+
+leapYearShow(2021, 2023);
+leapYearShow(2021, 2050);
+
+console.log('--------------------------------');
+
+function sumNumbers3 (n=10){
+    let sum = 0, num;
+    for(num = 1; num <= n; num++){
+        sum += num;
+    }
+    return sum;
+}
+
+let res3 = sumNumbers3();
+console.log(res3);
